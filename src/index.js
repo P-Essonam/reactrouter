@@ -22,7 +22,8 @@ root.render(
           <Route path='/' element={<App/>} />
           <Route path='/post' element={<NewPost/>} />
           <Route path='/post/:id' element={<PostPage/>} />
-          <Route path='/about' element={<About/>} />
+          
+          <Route path='/about/:id/:type' element={<About/>} />
           {/* <Route path='*' element={<Missing/>} /> */}
         </Routes>
 
