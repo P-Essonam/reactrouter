@@ -17,7 +17,7 @@ root.render(
       <Header />
         <Nav />
         <Link to='/post'>Newpost</Link>
-
+        <Link to={`/post/${1}`}>PostPage</Link>
         <Routes>
           <Route path='/' element={<App/>} />
           <Route path='/post' element={<NewPost/>} />
