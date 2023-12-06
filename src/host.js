@@ -5,9 +5,9 @@ const Host = () => {
   return (
     <>
     <nav>
-        <Link to={"/post"}>Dashboard</Link>
-        <Link to={"/post/:id"}>post detail</Link>
-        <Link to={"/post/income"}>Income</Link>
+        <Link to={"."}>Dashboard</Link>
+        <Link to={":id"}>post detail</Link>
+        <Link to={"income"}>Income</Link>
     </nav>
     <Outlet />
     </>
