@@ -13,6 +13,7 @@ import Layout from './Layout';
 import Host from './host';
 import Income from './Income';
 import Dashboard from './Dashboard';
+import Incomelayout from './Incomelayout';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -26,7 +27,11 @@ root.render(
             <Route path='post' element={< Host/>}>
               <Route index element={<Dashboard/>} />
               <Route path=':id' element={<PostPage/>} />
-              <Route path='income/:id' element={<Income/>} />
+              <Route path='income' element={<Income/>} />
+              <Route path='income/:id' element={<Incomelayout/>}>
+                  <Route index element={<><h2>detail incom</h2><Link to='..' relative='path'>Back to icome page</Link></>} />
+                  <Route path='boss' element={<h1>Je suis le boss</h1>} />
+              </Route>
             </Route>
             
             <Route path='/about/:id/:type' element={<About/>} />
@@ -41,3 +46,11 @@ root.render(
   </BrowserRouter>
 );
 
+
+/*
+
+on utilise useOutletContext quon va placer dans chaque composer
+et dans le outlet context={{}} on passe les valeurs qu'on veut afficher sur 
+chaque page.  dans chaque page pon passe const { var } = outletContext et on
+recupere la donnee voule 
+ */
