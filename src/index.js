@@ -26,7 +26,7 @@ root.render(
             <Route path='post' element={< Host/>}>
               <Route index element={<Dashboard/>} />
               <Route path=':id' element={<PostPage/>} />
-              <Route path='income' element={<Income/>} />
+              <Route path='income/:id' element={<Income/>} />
             </Route>
             
             <Route path='/about/:id/:type' element={<About/>} />
