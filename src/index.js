@@ -23,7 +23,6 @@ root.render(
     <Routes>
       <Route path='/' element={<Layout/>}>
             <Route index element={<App/>} />
-
             <Route path='post' element={< Host/>}>
               <Route index element={<Dashboard/>} />
               <Route path=':id' element={<PostPage/>} />
@@ -36,8 +35,9 @@ root.render(
             
             <Route path='/about/:id/:type' element={<About/>} />
 
-            
+            <Route path='*' element={<h1>Not found</h1>} /> 
       </Route>
+      
     </Routes> 
 
           
