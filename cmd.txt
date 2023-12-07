@@ -1,1 +1,11 @@
 97 useNavigate to navigate since code not ui
+les action dans Route sont utiliser pour appelerune fonction
+afin d'execiter une tache utiliser pour les formulaire comme 
+login page
+
+101 React Router 6 / regarder pour fair le login
+
+113 get previous pathname 
+
+
+
